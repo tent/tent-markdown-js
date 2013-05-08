@@ -824,7 +824,7 @@ function merge_text_nodes( jsonml ) {
         // Taken from Markdown.dialects.Gruber.inline["  \n"]
         // Modification: Don't require spaces before \n
         "\n": function lineBreak( text ) {
-          return [ 3, [ "linebreak" ] ];
+          return [ 1, [ "linebreak" ] ];
         }
 
       }
