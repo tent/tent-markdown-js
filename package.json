@@ -1,7 +1,7 @@
 {
   "name": "tent-markdown",
-  "version": "0.0.2",
-  "description": "Tent dialect for markdown-js lib",
+  "version": "0.0.3",
+  "description": "Tent dialect for markdown lib",
   "keywords": [
     "tent",
     "markdown"
