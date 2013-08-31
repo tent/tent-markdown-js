@@ -1,0 +1,10 @@
+["html",
+  ["p",
+    "Urls like ",
+    ["a",
+      { "href" : "https://duckduckgo.com" },
+      "https://duckduckgo.com"
+    ],
+    " should be autolinked"
+  ]
+]

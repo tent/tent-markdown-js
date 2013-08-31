@@ -1,0 +1,47 @@
+["html",
+  ["p",
+    "The ",
+    ["em",
+      "quick"
+    ],
+    " brown ",
+    ["strong",
+      "fox"
+    ],
+    " (with an ",
+    ["code",
+      "inserted code block"
+    ],
+    ") ",
+    ["a",
+      { "href" : "https://jumps.example.com" },
+      "https://jumps.example.com"
+    ],
+    " ",
+    ["del",
+      ["a",
+        { "href": "http://example.org" },
+        "around"
+      ]
+    ],
+    " (another ",
+    ["code",
+      "code block"
+    ],
+    ") over ",
+    ["a",
+      { "href": "http://the.example.com" },
+        "http://the.example.com"
+    ],
+    " ",
+    ["strong",
+      "lazy"
+    ],
+    " ",
+    ["a",
+      { "href": "https://example.com/dog" },
+      "dog"
+    ],
+    "."
+  ]
+]
