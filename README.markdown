@@ -1,4 +1,4 @@
-# tent-markdown-js
+# tent-markdown-js [![Build Status](https://travis-ci.org/tent/tent-markdown-js.png?branch=master)](https://travis-ci.org/tent/tent-markdown-js)
 
 [Tent](https://tent.io) Dialect for [markdown-js](https://github.com/evilstreak/markdown-js).
 
