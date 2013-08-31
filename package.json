@@ -26,7 +26,16 @@
     "url": "git://github.com/tent/tent-markdown-js.git"
   },
   "main": "./lib/index.js",
+  "directories": {
+    "test": "test"
+  },
   "dependencies": {
     "markdown": "~0.4.0"
+  },
+  "devDependencies": {
+    "tap": "~0.3.3"
+  },
+  "scripts": {
+    "test": "tap ./test/*.t.js"
   }
 }

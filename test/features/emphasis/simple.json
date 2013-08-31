@@ -1,0 +1,16 @@
+["html",
+  ["p",
+    "Emphasis can be ",
+    ["strong",
+      "strong"
+    ],
+    "."
+  ],
+  ["p",
+    "It can use ",
+    ["em",
+      "underscores"
+    ],
+    "."
+  ]
+]
