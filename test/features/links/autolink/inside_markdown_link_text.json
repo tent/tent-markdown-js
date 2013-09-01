@@ -1,0 +1,10 @@
+["html",
+  ["p",
+    "A URL within a markdown link like so: ",
+    ["a",
+      { "href" : "http://example.com/foo/bar" },
+      "http://example.com"
+    ],
+    " should not be autolinked"
+  ]
+]
