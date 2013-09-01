@@ -37,6 +37,6 @@
   },
   "scripts": {
     "test": "tap ./test/*.t.js",
-    "build": "cat ./lib/link-matcher.js > ./vendor/tent-markdown.js && cat ./src/markdown.js >> ./src/tent-markdown.js && cat ./lib/tent-markdown.js >> ./src/tent-markdown.js"
+    "build": "cat ./lib/link-matcher.js > ./src/tent-markdown.js && cat ./vendor/markdown.js >> ./src/tent-markdown.js && cat ./lib/tent-markdown.js >> ./src/tent-markdown.js"
   }
 }
