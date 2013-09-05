@@ -1,0 +1,18 @@
+["html",
+  ["p",
+    ["del",
+      "this ",
+      ["strong", "can"],
+      " have ",
+      ["em", "nested"],
+      " markdown"
+    ],
+    " and ~this ",
+    ["strong", "will"],
+    " ",
+    ["em", "not"],
+    " have a line ",
+    ["strong", "through"],
+    " ~it"
+  ]
+]

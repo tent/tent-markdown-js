@@ -1,0 +1,9 @@
+["html",
+  ["p",
+    "Look: ",
+    ["del",
+      "text with a line through it"
+    ],
+    "!"
+  ]
+]

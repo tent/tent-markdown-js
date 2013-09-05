@@ -63,7 +63,8 @@ dialects.Tent = [
   "emphasis",
   "linebreaks",
   "links",
-  "links/autolink"
+  "links/autolink",
+  "strikethrough"
 ];
 
 for ( var d in dialects ) {
