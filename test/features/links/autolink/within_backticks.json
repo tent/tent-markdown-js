@@ -1,0 +1,8 @@
+["html",
+  ["p",
+    "Links within backticks should not be autolinked: ",
+    ["code",
+      "http://example.org"
+    ]
+  ]
+]
