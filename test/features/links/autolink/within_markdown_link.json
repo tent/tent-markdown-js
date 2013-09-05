@@ -1,0 +1,9 @@
+["html",
+  ["p",
+    "This should be a markdown link and not be autolinked: ",
+    ["a",
+      { "href": "http://example.com" },
+      "Have you seen http://example.com? It's great"
+    ]
+  ]
+]
