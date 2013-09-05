@@ -4,6 +4,7 @@
     ["a",
       { "href": "http://example.com" },
       "Have you seen http://example.com? It's great"
-    ]
+    ],
+    " isn't it?"
   ]
 ]
