@@ -52,6 +52,28 @@ Simply put,
 
 where `entity_uris` is an `Array` of entity uris with indices mapping to integer links in the markdown source.
 
+### Preprocessers
+
+The jsonml may be manipulated using preprocessors before it is translated into html.
+
+```javascript
+addAttributeToLinks = function ( jsonml ) {
+  // Skip over anything that isn't a link
+  if (jsonml[0] !== 'link') return jsonml;
+
+  jsonml[1]['data-my-attribute'] = 'Hello World';
+
+  return jsonml;
+}
+
+var markdown = require( "tent-markdown" ).markdown;
+console.log( markdown.toHTML( "https://example.com", "Tent", { preprocessors: [addAttributeToLinks] } ) );
+```
+
+```html
+<p><a href="https://example.com" data-my-attribute="Hello World">https://example.com</a></p>
+```
+
 ## Contributing
 
 1. Fork it
