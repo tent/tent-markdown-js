@@ -12,7 +12,11 @@
 
 ```js
 var markdown = require( "tent-markdown" ).markdown;
-console.log( markdown.toHTML( "Hello *World*!", "Tent", { footnotes: [] } ) );
+console.log( markdown.toHTML( "Hello *World*! #firstwords", "Tent", { footnotes: [], hashtagURITemplate: 'http://example.com/search?hashtag={hashtag}' } ) );
+```
+
+```html
+<p>Hello <strong>World</strong>! <a href="http://example.com/search?hashtag=firstwords" rel="hashtag">#firstwords</a></p>
 ```
 
 ### Browser

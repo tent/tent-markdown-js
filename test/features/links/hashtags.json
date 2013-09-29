@@ -1,0 +1,60 @@
+["html",
+  ["p",
+    "Hashtags like ",
+    ["a",
+      { "href" : "#1hashtag", "rel": "hashtag" },
+      "#1hashtag"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#hashtag1", "rel": "hashtag" },
+      "#hashtag1"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#mañana", "rel": "hashtag" },
+      "#mañana"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#café", "rel": "hashtag" },
+      "#café"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#트위터", "rel": "hashtag" },
+      "#트위터"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#ﾣﾦﾰ", "rel": "hashtag" },
+      "#ﾣﾦﾰ"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#ашок", "rel": "hashtag" },
+      "#ашок"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#漢字", "rel": "hashtag" },
+      "#漢字"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#カタカナ", "rel": "hashtag" },
+      "#カタカナ"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#日本語ハッシュタグ", "rel": "hashtag" },
+      "#日本語ハッシュタグ"
+    ],
+    ", ",
+    ["a",
+      { "href" : "#الجزيرة", "rel": "hashtag" },
+      "#الجزيرة"
+    ],
+    ", and others should be matched!"
+  ]
+]

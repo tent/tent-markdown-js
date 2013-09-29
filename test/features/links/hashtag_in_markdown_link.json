@@ -1,0 +1,10 @@
+["html",
+  ["p",
+    "When inside a ",
+    ["a",
+      { "href" : "#hashtag" },
+      "markdown link"
+    ],
+    ", hashtags should not be matched."
+  ]
+]
