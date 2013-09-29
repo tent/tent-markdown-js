@@ -1,0 +1,13 @@
+["html",
+  ["p",
+    ["a",
+      { "href" : "http://example.com" },
+      "http://example.com"
+    ],
+    " and a ",
+    ["a",
+      { "href" : "#hashtag", "rel": "hashtag" },
+      "#hashtag"
+    ]
+  ]
+]

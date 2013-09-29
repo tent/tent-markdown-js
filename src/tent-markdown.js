@@ -971,6 +971,14 @@ function merge_text_nodes( jsonml ) {
         autolink: function autolink( block, next ) {
           var urls = expose.extractUrlsWithIndices(block);
 
+          var nextBlock = function (block, next) {
+            var _block = [].concat(this.dialect.block.hashtags.call(this, block, next, false));
+            if (_block.length == 1) {
+              _block = _block[0];
+            }
+            return _block;
+          }
+
           if (!urls.length) {
             // no urls matched
             return;
@@ -1048,7 +1056,7 @@ function merge_text_nodes( jsonml ) {
             // process text before url
             before = _block.slice(0, item.indices[0] + index_offset);
             if (before.length) {
-              jsonml = jsonml.concat( this.processInline(before) );
+              jsonml = jsonml.concat(nextBlock.call(this, before, []) || [] );
             }
 
             // linkify url
@@ -1061,17 +1069,24 @@ function merge_text_nodes( jsonml ) {
           }
 
           // process remaining text
-          jsonml = jsonml.concat( this.processInline(_block) );
+          jsonml = jsonml.concat(nextBlock.call(this, _block, next) || [] );
 
           return [jsonml];
         },
 
-        hashtags: function (block, next) {
-          hashtags = expose.extractHashtagsWithIndices(block);
+        hashtags: function (block, next, wrapInPara) {
+          if (wrapInPara == null) wrapInPara = true;
+
+          var hashtags = expose.extractHashtagsWithIndices(block);
+
+          var nextBlock = function () {
+            var _block = this.dialect.block.para.call(this, block, next);
+            return wrapInPara ? _block : _block[0].slice(1);
+          }
 
           if (!hashtags.length) {
             // no hashtags here, moving along
-            return;
+            return nextBlock.call(this);
           }
 
           var autolink_items = [];
@@ -1129,12 +1144,12 @@ function merge_text_nodes( jsonml ) {
 
           if (!autolink_items.length) {
             // there's nothing to autolink
-            return;
+            return nextBlock.call(this);
           }
 
           // wrap matched hashtags in links
 
-          var jsonml = ["para"],
+          var jsonml = wrapInPara ? ["para"] : [],
               _block = block,
               item = null,
               index_offset = 0,
