@@ -1,0 +1,7 @@
+["html",
+  ["p",
+    ">blockquote",
+    ["br"],
+    ">without spaces"
+  ]
+]

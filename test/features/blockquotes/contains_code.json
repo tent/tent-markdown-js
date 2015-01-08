@@ -1,0 +1,12 @@
+["html",
+  ["blockquote",
+    ["p",
+      "There's a code block in here: ",
+      ["code",
+        "SET foo = TRUE"
+      ],
+      ["br"],
+      "Wasn't that nice?"
+    ]
+  ]
+]
